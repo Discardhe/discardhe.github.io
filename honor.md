@@ -37,39 +37,41 @@ subtitle: "战绩只是开始，复盘才是进步。"
 
 ---
 
-## 最近 3 条高光战绩（附件）
+## 最近 3 条战绩（结构化）
 
-<div class="list">
-  <div class="item glass">
-    <div style="display:flex; align-items:baseline; justify-content:space-between; gap:10px; flex-wrap:wrap;">
-      <div style="font-weight:800;">胜利 · MVP · 顶级发育路</div>
-      <div class="item__meta">评分 15.1 · KDA 7 / 0 / 14</div>
+<div markdown="0">
+<div class="honor-grid">
+{% for m in site.data.honor %}
+  <div class="honor-card glass">
+    <div class="honor-head">
+      <div class="honor-hero">
+        <img class="honor-hero__img" src="{{ m.hero_icon | relative_url }}" alt="{{ m.hero | escape }} 图标" loading="lazy">
+      </div>
+      <div style="flex:1;">
+        <div class="honor-title">
+          <span class="honor-badge honor-badge--{{ m.result | escape }}">{{ m.result }}</span>
+          <span style="font-weight:800;">{{ m.hero }}</span>
+          <span style="color:var(--muted);">· {{ m.lane }}</span>
+        </div>
+        <div class="item__meta">{{ m.date }} · {{ m.duration_min }} 分钟 · 评分 {{ m.rating }} · KDA {{ m.kda }}</div>
+      </div>
     </div>
-    <div class="gallery js-pswp-gallery" style="grid-template-columns: repeat(2, 1fr); margin-top:10px;">
-      <a href="{{ '/assets/photos/honor/match-1-overview.png' | relative_url }}" data-pswp-width="1290" data-pswp-height="2796"><img src="{{ '/assets/photos/honor/match-1-overview.png' | relative_url }}" alt="战绩 1（总览）" loading="lazy"></a>
-      <a href="{{ '/assets/photos/honor/match-1-data.png' | relative_url }}" data-pswp-width="1290" data-pswp-height="2796"><img src="{{ '/assets/photos/honor/match-1-data.png' | relative_url }}" alt="战绩 1（数据）" loading="lazy"></a>
+
+    <div class="honor-metrics">
+      <div class="honor-metric">
+        <div class="honor-metric__k">伤害占比</div>
+        <div class="honor-metric__v">{{ m.stats.damage_share }}</div>
+      </div>
+      <div class="honor-metric">
+        <div class="honor-metric__k">承伤占比</div>
+        <div class="honor-metric__v">{{ m.stats.tank_share }}</div>
+      </div>
+      <div class="honor-metric">
+        <div class="honor-metric__k">参团率</div>
+        <div class="honor-metric__v">{{ m.stats.participation }}</div>
+      </div>
     </div>
   </div>
-
-  <div class="item glass">
-    <div style="display:flex; align-items:baseline; justify-content:space-between; gap:10px; flex-wrap:wrap;">
-      <div style="font-weight:800;">胜利 · MVP · 金牌中路</div>
-      <div class="item__meta">评分 13.9 · KDA 8 / 0 / 12</div>
-    </div>
-    <div class="gallery js-pswp-gallery" style="grid-template-columns: repeat(2, 1fr); margin-top:10px;">
-      <a href="{{ '/assets/photos/honor/match-2-overview.png' | relative_url }}" data-pswp-width="1290" data-pswp-height="2796"><img src="{{ '/assets/photos/honor/match-2-overview.png' | relative_url }}" alt="战绩 2（总览）" loading="lazy"></a>
-      <a href="{{ '/assets/photos/honor/match-2-data.png' | relative_url }}" data-pswp-width="1290" data-pswp-height="2796"><img src="{{ '/assets/photos/honor/match-2-data.png' | relative_url }}" alt="战绩 2（数据）" loading="lazy"></a>
-    </div>
-  </div>
-
-  <div class="item glass">
-    <div style="display:flex; align-items:baseline; justify-content:space-between; gap:10px; flex-wrap:wrap;">
-      <div style="font-weight:800;">失败 · MVP · 顶级中路</div>
-      <div class="item__meta">评分 14.9 · KDA 13 / 2 / 10</div>
-    </div>
-    <div class="gallery js-pswp-gallery" style="grid-template-columns: repeat(2, 1fr); margin-top:10px;">
-      <a href="{{ '/assets/photos/honor/match-3-overview.png' | relative_url }}" data-pswp-width="1290" data-pswp-height="2796"><img src="{{ '/assets/photos/honor/match-3-overview.png' | relative_url }}" alt="战绩 3（总览）" loading="lazy"></a>
-      <a href="{{ '/assets/photos/honor/match-3-data.png' | relative_url }}" data-pswp-width="1290" data-pswp-height="2796"><img src="{{ '/assets/photos/honor/match-3-data.png' | relative_url }}" alt="战绩 3（数据）" loading="lazy"></a>
-    </div>
-  </div>
+{% endfor %}
+</div>
 </div>
