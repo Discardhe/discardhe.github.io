@@ -35,3 +35,41 @@ subtitle: "战绩只是开始，复盘才是进步。"
 - 一句话复盘：这把赢在…… / 输在……  
 - 截图：放到 `assets/photos/honor/`，然后在本页用普通 Markdown 图片或“相册灯箱”展示
 
+---
+
+## 最近 3 条高光战绩（附件）
+
+<div class="list">
+  <div class="item glass">
+    <div style="display:flex; align-items:baseline; justify-content:space-between; gap:10px; flex-wrap:wrap;">
+      <div style="font-weight:800;">胜利 · MVP · 顶级发育路</div>
+      <div class="item__meta">评分 15.1 · KDA 7 / 0 / 14</div>
+    </div>
+    <div class="gallery js-pswp-gallery" style="grid-template-columns: repeat(2, 1fr); margin-top:10px;">
+      <a href="{{ '/assets/photos/honor/match-1-overview.png' | relative_url }}" data-pswp-width="1290" data-pswp-height="2796"><img src="{{ '/assets/photos/honor/match-1-overview.png' | relative_url }}" alt="战绩 1（总览）" loading="lazy"></a>
+      <a href="{{ '/assets/photos/honor/match-1-data.png' | relative_url }}" data-pswp-width="1290" data-pswp-height="2796"><img src="{{ '/assets/photos/honor/match-1-data.png' | relative_url }}" alt="战绩 1（数据）" loading="lazy"></a>
+    </div>
+  </div>
+
+  <div class="item glass">
+    <div style="display:flex; align-items:baseline; justify-content:space-between; gap:10px; flex-wrap:wrap;">
+      <div style="font-weight:800;">胜利 · MVP · 金牌中路</div>
+      <div class="item__meta">评分 13.9 · KDA 8 / 0 / 12</div>
+    </div>
+    <div class="gallery js-pswp-gallery" style="grid-template-columns: repeat(2, 1fr); margin-top:10px;">
+      <a href="{{ '/assets/photos/honor/match-2-overview.png' | relative_url }}" data-pswp-width="1290" data-pswp-height="2796"><img src="{{ '/assets/photos/honor/match-2-overview.png' | relative_url }}" alt="战绩 2（总览）" loading="lazy"></a>
+      <a href="{{ '/assets/photos/honor/match-2-data.png' | relative_url }}" data-pswp-width="1290" data-pswp-height="2796"><img src="{{ '/assets/photos/honor/match-2-data.png' | relative_url }}" alt="战绩 2（数据）" loading="lazy"></a>
+    </div>
+  </div>
+
+  <div class="item glass">
+    <div style="display:flex; align-items:baseline; justify-content:space-between; gap:10px; flex-wrap:wrap;">
+      <div style="font-weight:800;">失败 · MVP · 顶级中路</div>
+      <div class="item__meta">评分 14.9 · KDA 13 / 2 / 10</div>
+    </div>
+    <div class="gallery js-pswp-gallery" style="grid-template-columns: repeat(2, 1fr); margin-top:10px;">
+      <a href="{{ '/assets/photos/honor/match-3-overview.png' | relative_url }}" data-pswp-width="1290" data-pswp-height="2796"><img src="{{ '/assets/photos/honor/match-3-overview.png' | relative_url }}" alt="战绩 3（总览）" loading="lazy"></a>
+      <a href="{{ '/assets/photos/honor/match-3-data.png' | relative_url }}" data-pswp-width="1290" data-pswp-height="2796"><img src="{{ '/assets/photos/honor/match-3-data.png' | relative_url }}" alt="战绩 3（数据）" loading="lazy"></a>
+    </div>
+  </div>
+</div>
