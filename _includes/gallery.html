@@ -1,0 +1,20 @@
+{% assign g = include.gallery %}
+<section class="glass" style="padding:18px; margin-bottom:14px;">
+  <h2 style="margin:0 0 6px;">{{ g.title }}</h2>
+  {% if g.desc %}<p style="margin:0 0 12px; color: var(--muted);">{{ g.desc }}</p>{% endif %}
+
+  <div class="gallery js-pswp-gallery">
+    {% for it in g.items %}
+      <a
+        href="{{ it.src | relative_url }}"
+        data-pswp-width="{{ it.w }}"
+        data-pswp-height="{{ it.h }}"
+        target="_blank"
+        rel="noreferrer"
+      >
+        <img src="{{ it.thumb | relative_url }}" alt="{{ it.alt | escape }}" loading="lazy" />
+      </a>
+    {% endfor %}
+  </div>
+</section>
+

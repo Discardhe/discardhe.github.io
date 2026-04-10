@@ -1,0 +1,35 @@
+- id: "featured"
+  title: "精选"
+  desc: "一些我最喜欢的照片（示例数据：把 src 换成你自己的图片路径即可）"
+  items:
+    - src: "/assets/photos/demo/01.jpg"
+      thumb: "/assets/photos/demo/01.jpg"
+      w: 1600
+      h: 1067
+      alt: "示例照片 01"
+    - src: "/assets/photos/demo/02.jpg"
+      thumb: "/assets/photos/demo/02.jpg"
+      w: 1600
+      h: 1067
+      alt: "示例照片 02"
+    - src: "/assets/photos/demo/03.jpg"
+      thumb: "/assets/photos/demo/03.jpg"
+      w: 1600
+      h: 1067
+      alt: "示例照片 03"
+
+- id: "film-2026-04"
+  title: "胶卷 · 2026-04"
+  desc: "按时间/按卷归档（示例）"
+  items:
+    - src: "/assets/photos/demo/04.jpg"
+      thumb: "/assets/photos/demo/04.jpg"
+      w: 1600
+      h: 1067
+      alt: "胶卷示例 01"
+    - src: "/assets/photos/demo/05.jpg"
+      thumb: "/assets/photos/demo/05.jpg"
+      w: 1600
+      h: 1067
+      alt: "胶卷示例 02"
+

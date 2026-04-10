@@ -1,0 +1,15 @@
+<header class="topbar">
+  <div class="topbar__inner glass">
+    <a class="brand" href="{{ '/' | relative_url }}">
+      <span class="brand__dot"></span>
+      <span class="brand__text">{{ site.title }}</span>
+    </a>
+
+    <nav class="nav">
+      {% for item in site.nav %}
+        <a class="nav__link" href="{{ item.url | relative_url }}">{{ item.title }}</a>
+      {% endfor %}
+    </nav>
+  </div>
+</header>
+
