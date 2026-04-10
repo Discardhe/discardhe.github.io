@@ -42,6 +42,12 @@ subtitle: "战绩只是开始，复盘才是进步。"
 <div markdown="0">
 <div class="honor-grid">
 {% for m in site.data.honor %}
+  {% assign lane_class = "honor-lane--default" %}
+  {% if m.lane contains "顶级" %}
+    {% assign lane_class = "honor-lane--top" %}
+  {% elsif m.lane contains "金牌" %}
+    {% assign lane_class = "honor-lane--gold" %}
+  {% endif %}
   <div class="honor-card glass">
     <div class="honor-head">
       <div class="honor-hero">
@@ -51,7 +57,7 @@ subtitle: "战绩只是开始，复盘才是进步。"
         <div class="honor-title">
           <span class="honor-badge honor-badge--{{ m.result | escape }}">{{ m.result }}</span>
           <span style="font-weight:800;">{{ m.hero }}</span>
-          <span style="color:var(--muted);">· {{ m.lane }}</span>
+          <span class="honor-lane {{ lane_class }}">{{ m.lane }}</span>
         </div>
         <div class="item__meta">{{ m.date }} · {{ m.duration_min }} 分钟 · 评分 {{ m.rating }} · KDA {{ m.kda }}</div>
       </div>

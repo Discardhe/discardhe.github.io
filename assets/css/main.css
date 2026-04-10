@@ -234,6 +234,64 @@ a:hover{color:var(--blue)}
 }
 .honor-badge--胜利{background: rgba(34,197,94,.14); color:#166534; border-color: rgba(34,197,94,.25);}
 .honor-badge--失败{background: rgba(239,68,68,.12); color:#7f1d1d; border-color: rgba(239,68,68,.25);}
+
+/* 分路徽章：模拟游戏里“闪闪”的紫/金质感（不使用原始素材） */
+.honor-lane{
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 900;
+  color: rgba(255,255,255,.96);
+  letter-spacing: .2px;
+  line-height: 1.2;
+  border: 1px solid rgba(255,255,255,.35);
+  box-shadow: 0 10px 22px rgba(2, 6, 23, .12);
+  overflow: hidden;
+  transform: translateZ(0);
+}
+.honor-lane::before{
+  content:"";
+  position:absolute;
+  inset:-30%;
+  background:
+    radial-gradient(120px 80px at 20% 30%, rgba(255,255,255,.55), transparent 60%),
+    radial-gradient(120px 90px at 80% 70%, rgba(255,255,255,.35), transparent 65%),
+    linear-gradient(120deg, transparent 0%, rgba(255,255,255,.55) 18%, transparent 36%);
+  opacity: .8;
+  transform: translateX(-55%) rotate(8deg);
+  animation: honor-shine 2.8s ease-in-out infinite;
+  pointer-events:none;
+}
+.honor-lane::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background: radial-gradient(10px 10px at 18% 20%, rgba(255,255,255,.75), transparent 60%);
+  opacity:.9;
+  pointer-events:none;
+}
+.honor-lane--top{
+  background: linear-gradient(135deg, rgba(124,58,237,.96), rgba(168,85,247,.92), rgba(96,165,250,.85));
+  border-color: rgba(168,85,247,.45);
+  text-shadow: 0 1px 0 rgba(0,0,0,.18);
+}
+.honor-lane--gold{
+  background: linear-gradient(135deg, rgba(245,158,11,.96), rgba(251,191,36,.94), rgba(249,115,22,.9));
+  border-color: rgba(251,191,36,.55);
+  text-shadow: 0 1px 0 rgba(0,0,0,.18);
+}
+.honor-lane--default{
+  background: linear-gradient(135deg, rgba(59,130,246,.95), rgba(56,189,248,.9));
+  border-color: rgba(56,189,248,.55);
+}
+@keyframes honor-shine{
+  0%{ transform: translateX(-60%) rotate(8deg); opacity:.55; }
+  45%{ opacity:.85; }
+  100%{ transform: translateX(60%) rotate(8deg); opacity:.55; }
+}
 .honor-metrics{
   margin-top: 12px;
   display:grid;
