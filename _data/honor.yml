@@ -4,7 +4,7 @@
   result: "胜利"
   lane: "顶级发育路"
   hero: "敖隐"
-  hero_icon: "/assets/heroes/aoyin.svg"
+  hero_icon: "/assets/heroes/aoyin.webp"
   rating: 15.1
   kda: "7 / 0 / 14"
   stats:
@@ -18,7 +18,7 @@
   result: "胜利"
   lane: "金牌中路"
   hero: "嫦娥"
-  hero_icon: "/assets/heroes/change.svg"
+  hero_icon: "/assets/heroes/change.webp"
   rating: 13.9
   kda: "8 / 0 / 12"
   stats:
@@ -32,11 +32,10 @@
   result: "失败"
   lane: "顶级中路"
   hero: "海月"
-  hero_icon: "/assets/heroes/haiyue.svg"
+  hero_icon: "/assets/heroes/haiyue.webp"
   rating: 14.9
   kda: "13 / 2 / 10"
   stats:
     damage_share: "30.6%"
     tank_share: "25.1%"
     participation: "74.2%"
-

@@ -8,14 +8,14 @@
 - section: "教育经历"
   items:
     - name: "Peking University, Guanghua School of Management"
-      logo: "/assets/logos/pku.svg"
+      logo: "/assets/logos/pku.png"
       meta: "Master of Finance (Advanced Finance Track)"
       time: "Sep 2025 – Jun 2027"
       highlights:
         - "GPA: 3.82/4.00, rank TOP10%"
         - "Coursework: Advanced Macroeconomics, Asset Pricing, Advanced Corporate Finance, Advanced Financial Accounting"
     - name: "Renmin University of China, School of Finance"
-      logo: "/assets/logos/ruc.svg"
+      logo: "/assets/logos/ruc.png"
       meta: "B.Econ in Financial Engineering"
       time: "Sep 2021 – Jun 2025"
       highlights:
@@ -25,28 +25,28 @@
 - section: "工作经历"
   items:
     - name: "Morgan Stanley"
-      logo: "/assets/logos/morgan-stanley.svg"
+      logo: "/assets/logos/morgan-stanley.png"
       meta: "Investment Banking Division, Off-cycle Intern"
       time: "Jul 2025 – Oct 2025"
       highlights:
         - "MegaRobo’s HKEX IPO: supported roadshow & investor contact after A-1; prepared NDR materials; drafted outreach emails for 100+ investors; maintained Q&A insights."
         - "Pharmaceutical Comp’s HKEX IPO: supported DD to A-1 filing; assisted TPDD; screened suppliers/customers/banks/PI interviews; edited prospectus & pipeline charts; prepared DDRC memo."
     - name: "CMC Capital"
-      logo: "/assets/logos/cmc.svg"
+      logo: "/assets/logos/cmc.png"
       meta: "Investment Intern"
       time: "Nov 2024 – Mar 2025"
       highlights:
         - "New energy vessel research: analyzed market potential & policy impacts; assessed barriers; conducted CDD via market research and expert/management interviews; delivered investment recommendations."
         - "Project management: took 24 notes; updated financial models & progress summaries for 4 portfolio companies."
     - name: "Alibaba"
-      logo: "/assets/logos/alibaba.svg"
+      logo: "/assets/logos/alibaba.png"
       meta: "Strategy Intern"
       time: "Jul 2024 – Nov 2024"
       highlights:
         - "AI search: studied products and key players via weekly traffic data, user interviews and product experiences; summarized competitive landscape (e.g., Perplexity) and commercialization paths."
         - "E-commerce: studied European retail market; summarized AliExpress development focus; tracked sales/traffic of competitors (Temu & Shein)."
     - name: "CICC Capital Management"
-      logo: "/assets/logos/cicc.svg"
+      logo: "/assets/logos/cicc.png"
       meta: "Investment Intern"
       time: "Mar 2024 – Jun 2024"
       highlights:
@@ -55,7 +55,7 @@
 - section: "项目与活动"
   items:
     - name: "Research Assistant (RUC) — Team of Associate Professor Miao Meng"
-      logo: "/assets/logos/ruc.svg"
+      logo: "/assets/logos/ruc.png"
       meta: "Data / research"
       time: ""
       highlights:
