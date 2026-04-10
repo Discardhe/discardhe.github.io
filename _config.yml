@@ -1,5 +1,5 @@
-title: "discardhe"
-description: "日常记录 · CV · 胶卷 · 精选照片日记 · 王者荣耀专区"
+title: "Yi He"
+description: "日常记录 · CV · 胶卷 · 照片日记 · 王者荣耀"
 url: "https://discardhe.github.io"
 baseurl: ""
 
@@ -38,10 +38,7 @@ nav:
     url: "/cv/"
   - title: "胶卷"
     url: "/film/"
-  - title: "精选照片日记"
+  - title: "Diary"
     url: "/diary/"
-  - title: "王者荣耀专区"
+  - title: "王者荣耀"
     url: "/honor/"
-  - title: "相册"
-    url: "/gallery/"
-
