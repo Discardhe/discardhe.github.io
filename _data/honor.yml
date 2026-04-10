@@ -1,0 +1,42 @@
+- id: "2026-03-26-01"
+  date: "2026-03-26 02:11"
+  duration_min: 11
+  result: "胜利"
+  lane: "顶级发育路"
+  hero: "敖隐"
+  hero_icon: "/assets/heroes/aoyin.svg"
+  rating: 15.1
+  kda: "7 / 0 / 14"
+  stats:
+    damage_share: "43.2%"
+    tank_share: "19.8%"
+    participation: "72.4%"
+
+- id: "2026-02-17-01"
+  date: "2026-02-17 12:23"
+  duration_min: 11
+  result: "胜利"
+  lane: "金牌中路"
+  hero: "嫦娥"
+  hero_icon: "/assets/heroes/change.svg"
+  rating: 13.9
+  kda: "8 / 0 / 12"
+  stats:
+    damage_share: "28.5%"
+    tank_share: "29.8%"
+    participation: "74.1%"
+
+- id: "2026-02-18-01"
+  date: "2026-02-18 17:59"
+  duration_min: 16
+  result: "失败"
+  lane: "顶级中路"
+  hero: "海月"
+  hero_icon: "/assets/heroes/haiyue.svg"
+  rating: 14.9
+  kda: "13 / 2 / 10"
+  stats:
+    damage_share: "30.6%"
+    tank_share: "25.1%"
+    participation: "74.2%"
+

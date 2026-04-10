@@ -1,7 +1,7 @@
 ---
 title: "个人 CV"
 permalink: /cv/
-subtitle: "好累！"
+subtitle: "把你的简历拆成结构化模块，更好维护。"
 ---
 
 {% assign cv = site.data.cv %}

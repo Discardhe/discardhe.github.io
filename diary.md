@@ -1,5 +1,5 @@
 ---
-title: "精选照片日记"
+title: "Diary"
 permalink: /diary/
 subtitle: "每篇一段文字 + 若干张图。"
 ---
@@ -14,4 +14,3 @@ subtitle: "每篇一段文字 + 若干张图。"
     </a>
   {% endfor %}
 </div>
-

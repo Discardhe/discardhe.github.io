@@ -1,6 +1,6 @@
 - id: "featured"
   title: "精选"
-  desc: "一些我最喜欢的照片"
+  desc: "一些我最喜欢的照片（示例数据：把 src 换成你自己的图片路径即可）"
   items:
     - src: "/assets/photos/demo/01.jpg"
       thumb: "/assets/photos/demo/01.jpg"
@@ -33,3 +33,107 @@
       h: 1067
       alt: "胶卷示例 02"
 
+- id: "film-uk-memory-2025"
+  title: "英国记忆"
+  desc: "本科最后一年"
+  items:
+    - src: "/assets/photos/film-uk-memory/uk-memory-01.jpg"
+      thumb: "/assets/photos/film-uk-memory/uk-memory-01.jpg"
+      w: 1290
+      h: 847
+      alt: "英国记忆"
+    - src: "/assets/photos/film-uk-memory/uk-memory-02.jpg"
+      thumb: "/assets/photos/film-uk-memory/uk-memory-02.jpg"
+      w: 1290
+      h: 853
+      alt: "英国记忆"
+    - src: "/assets/photos/film-uk-memory/uk-memory-03.jpg"
+      thumb: "/assets/photos/film-uk-memory/uk-memory-03.jpg"
+      w: 1290
+      h: 849
+      alt: "英国记忆"
+    - src: "/assets/photos/film-uk-memory/uk-memory-04.jpg"
+      thumb: "/assets/photos/film-uk-memory/uk-memory-04.jpg"
+      w: 804
+      h: 1225
+      alt: "英国记忆"
+    - src: "/assets/photos/film-uk-memory/uk-memory-05.jpg"
+      thumb: "/assets/photos/film-uk-memory/uk-memory-05.jpg"
+      w: 1290
+      h: 843
+      alt: "英国记忆"
+    - src: "/assets/photos/film-uk-memory/uk-memory-06.jpg"
+      thumb: "/assets/photos/film-uk-memory/uk-memory-06.jpg"
+      w: 1290
+      h: 854
+      alt: "英国记忆"
+    - src: "/assets/photos/film-uk-memory/uk-memory-07.jpg"
+      thumb: "/assets/photos/film-uk-memory/uk-memory-07.jpg"
+      w: 1290
+      h: 853
+      alt: "英国记忆"
+    - src: "/assets/photos/film-uk-memory/uk-memory-08.jpg"
+      thumb: "/assets/photos/film-uk-memory/uk-memory-08.jpg"
+      w: 1290
+      h: 860
+      alt: "英国记忆"
+    - src: "/assets/photos/film-uk-memory/uk-memory-09.jpg"
+      thumb: "/assets/photos/film-uk-memory/uk-memory-09.jpg"
+      w: 1290
+      h: 843
+      alt: "英国记忆"
+    - src: "/assets/photos/film-uk-memory/uk-memory-10.jpg"
+      thumb: "/assets/photos/film-uk-memory/uk-memory-10.jpg"
+      w: 1290
+      h: 854
+      alt: "英国记忆"
+    - src: "/assets/photos/film-uk-memory/uk-memory-11.jpg"
+      thumb: "/assets/photos/film-uk-memory/uk-memory-11.jpg"
+      w: 1290
+      h: 863
+      alt: "英国记忆"
+    - src: "/assets/photos/film-uk-memory/uk-memory-12.jpg"
+      thumb: "/assets/photos/film-uk-memory/uk-memory-12.jpg"
+      w: 1290
+      h: 844
+      alt: "英国记忆"
+    - src: "/assets/photos/film-uk-memory/uk-memory-13.jpg"
+      thumb: "/assets/photos/film-uk-memory/uk-memory-13.jpg"
+      w: 1290
+      h: 850
+      alt: "英国记忆"
+    - src: "/assets/photos/film-uk-memory/uk-memory-14.jpg"
+      thumb: "/assets/photos/film-uk-memory/uk-memory-14.jpg"
+      w: 1290
+      h: 846
+      alt: "英国记忆"
+    - src: "/assets/photos/film-uk-memory/uk-memory-15.jpg"
+      thumb: "/assets/photos/film-uk-memory/uk-memory-15.jpg"
+      w: 860
+      h: 1290
+      alt: "英国记忆"
+    - src: "/assets/photos/film-uk-memory/uk-memory-16.png"
+      thumb: "/assets/photos/film-uk-memory/uk-memory-16.png"
+      w: 1290
+      h: 2796
+      alt: "英国记忆"
+    - src: "/assets/photos/film-uk-memory/uk-memory-17.png"
+      thumb: "/assets/photos/film-uk-memory/uk-memory-17.png"
+      w: 1290
+      h: 2796
+      alt: "英国记忆"
+    - src: "/assets/photos/film-uk-memory/uk-memory-18.png"
+      thumb: "/assets/photos/film-uk-memory/uk-memory-18.png"
+      w: 1290
+      h: 2796
+      alt: "英国记忆"
+    - src: "/assets/photos/film-uk-memory/uk-memory-19.png"
+      thumb: "/assets/photos/film-uk-memory/uk-memory-19.png"
+      w: 1290
+      h: 2796
+      alt: "英国记忆"
+    - src: "/assets/photos/film-uk-memory/uk-memory-20.png"
+      thumb: "/assets/photos/film-uk-memory/uk-memory-20.png"
+      w: 1290
+      h: 2796
+      alt: "英国记忆"
