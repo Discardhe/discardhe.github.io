@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#e0f2fe"/>
+      <stop offset="1" stop-color="#93c5fd"/>
+    </linearGradient>
+  </defs>
+  <rect x="8" y="8" width="112" height="112" rx="28" fill="url(#g)"/>
+  <path d="M38 70c10-26 42-26 52 0" fill="none" stroke="rgba(15,23,42,0.55)" stroke-width="6" stroke-linecap="round"/>
+  <circle cx="52" cy="52" r="6" fill="rgba(15,23,42,0.55)"/>
+  <circle cx="76" cy="52" r="6" fill="rgba(15,23,42,0.55)"/>
+  <text x="64" y="104" text-anchor="middle" font-family="KaiTi, STKaiti, Kaiti SC, Helvetica, Arial" font-size="16" font-weight="800" fill="#0f172a">嫦娥</text>
+</svg>
+

@@ -1,0 +1,264 @@
+:root{
+  --bg1:#eaf4ff;
+  --bg2:#f7fbff;
+  --ink:#0f172a;
+  --muted:#334155;
+  --blue:#2563eb;
+  --blue2:#38bdf8;
+  --glass: rgba(255,255,255,.58);
+  --glass-border: rgba(255,255,255,.38);
+  --shadow: 0 18px 60px rgba(2, 6, 23, .12);
+  --radius: 18px;
+  /* 英文：Helvetica；中文：系统楷体优先（不同系统名称不同） */
+  --font-en: Helvetica, Arial, ui-sans-serif, system-ui;
+  --font-zh: "KaiTi", "Kaiti SC", "STKaiti", "DFKai-SB", "KaiTi_GB2312", serif;
+  --font-stack: var(--font-en), var(--font-zh);
+}
+
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  color:var(--ink);
+  /* 全局缩小字号：16px -> 14px */
+  font: 14px/1.7 var(--font-stack);
+  font-family: var(--font-stack);
+  background:
+    radial-gradient(1200px 600px at 20% 0%, rgba(56,189,248,.35), transparent 55%),
+    radial-gradient(900px 520px at 80% 10%, rgba(37,99,235,.25), transparent 55%),
+    linear-gradient(180deg, var(--bg1), var(--bg2));
+}
+
+a{color:inherit; text-decoration:none}
+a:hover{color:var(--blue)}
+
+.container{
+  width:min(980px, calc(100% - 32px));
+  margin: 0 auto;
+  padding: 88px 0 64px;
+}
+
+.glass{
+  background: var(--glass);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  box-shadow: var(--shadow);
+}
+
+.topbar{
+  position: fixed;
+  top: 14px;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  pointer-events: none;
+}
+.topbar__inner{
+  pointer-events: auto;
+  width: min(980px, calc(100% - 32px));
+  margin: 0 auto;
+  padding: 10px 14px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap: 14px;
+}
+.brand{display:flex; align-items:center; gap:10px; font-weight:700}
+.brand__dot{
+  width:10px; height:10px; border-radius:999px;
+  background: radial-gradient(circle at 30% 30%, #fff, var(--blue2));
+  box-shadow: 0 0 0 4px rgba(56,189,248,.18);
+}
+.nav{display:flex; gap: 10px; flex-wrap: wrap; justify-content:flex-end}
+.nav__link{
+  padding: 8px 10px;
+  border-radius: 999px;
+  color: var(--muted);
+}
+.nav__link:hover{
+  background: rgba(255,255,255,.55);
+  color: var(--ink);
+}
+
+.page{display:flex; flex-direction:column; gap: 14px}
+.page__header{padding: 18px 18px 14px}
+.page__title{margin:0; font-size: 24px; letter-spacing: .2px}
+.page__subtitle{margin:6px 0 0; color:var(--muted)}
+.page__content{padding: 18px}
+
+.hero{padding: 20px; display:grid; gap: 16px}
+.hero__title{margin:0; font-size: 30px}
+.hero__desc{margin:0; color:var(--muted)}
+.chips{display:flex; flex-wrap:wrap; gap:10px; margin-top: 4px}
+.chip{
+  padding: 8px 12px;
+  border-radius: 999px;
+  background: rgba(255,255,255,.55);
+  border: 1px solid rgba(255,255,255,.38);
+  color: var(--muted);
+}
+
+.grid{
+  display:grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 14px;
+}
+.card{
+  grid-column: span 6;
+  padding: 16px;
+}
+.card h3{margin:0 0 6px; font-size: 18px}
+.card p{margin:0; color:var(--muted)}
+.btn{
+  display:inline-flex;
+  align-items:center;
+  gap:10px;
+  padding: 10px 14px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, rgba(37,99,235,.95), rgba(56,189,248,.85));
+  color:#fff;
+  border: 0;
+  box-shadow: 0 12px 30px rgba(37,99,235,.25);
+}
+.btn:hover{filter: brightness(1.03)}
+
+.gallery{
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+.gallery a{
+  display:block;
+  border-radius: 14px;
+  overflow:hidden;
+  border: 1px solid rgba(255,255,255,.5);
+}
+.gallery img{
+  width:100%;
+  height: 210px;
+  object-fit: cover;
+  display:block;
+  transform: scale(1.01);
+}
+.gallery a:hover img{transform: scale(1.04); transition: transform .25s ease}
+
+.list{
+  display:flex;
+  flex-direction:column;
+  gap: 10px;
+}
+.item{
+  padding: 14px;
+  border-radius: 16px;
+  background: rgba(255,255,255,.55);
+  border: 1px solid rgba(255,255,255,.38);
+}
+.item__meta{color: var(--muted); font-size: 14px}
+
+.footer{padding: 10px 0 26px}
+.footer__inner{
+  width:min(980px, calc(100% - 32px));
+  margin: 0 auto;
+  color: var(--muted);
+  display:flex;
+  gap: 10px;
+  align-items:center;
+  justify-content:center;
+}
+.footer__sep{opacity:.6}
+
+.cv-section-title{
+  margin: 18px 0 10px;
+  font-size: 16px;
+}
+.cv-item{
+  display:flex;
+  gap: 12px;
+  align-items:flex-start;
+  padding: 14px;
+  border-radius: 16px;
+  background: rgba(255,255,255,.55);
+  border: 1px solid rgba(255,255,255,.38);
+}
+.cv-logo{
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  object-fit: cover;
+  background: rgba(255,255,255,.7);
+  border: 1px solid rgba(255,255,255,.55);
+}
+.cv-item__head{
+  display:flex;
+  align-items:baseline;
+  justify-content:space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.cv-item__name{font-weight:800}
+.cv-item__meta{color: var(--muted)}
+
+.honor-grid{
+  display:grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 14px;
+}
+.honor-card{
+  grid-column: span 6;
+  padding: 16px;
+}
+.honor-head{
+  display:flex;
+  gap: 12px;
+  align-items:center;
+}
+.honor-hero{
+  width: 46px;
+  height: 46px;
+  border-radius: 16px;
+  overflow:hidden;
+  border: 1px solid rgba(255,255,255,.55);
+  background: rgba(255,255,255,.65);
+}
+.honor-hero__img{width:100%; height:100%; object-fit:cover; display:block}
+.honor-title{display:flex; gap:8px; align-items:baseline; flex-wrap:wrap}
+.honor-badge{
+  font-size: 12px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  border: 1px solid rgba(255,255,255,.55);
+  background: rgba(255,255,255,.55);
+  color: var(--muted);
+}
+.honor-badge--胜利{background: rgba(34,197,94,.14); color:#166534; border-color: rgba(34,197,94,.25);}
+.honor-badge--失败{background: rgba(239,68,68,.12); color:#7f1d1d; border-color: rgba(239,68,68,.25);}
+.honor-metrics{
+  margin-top: 12px;
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+.honor-metric{
+  padding: 12px;
+  border-radius: 14px;
+  background: rgba(255,255,255,.55);
+  border: 1px solid rgba(255,255,255,.38);
+}
+.honor-metric__k{color: var(--muted); font-size: 12px;}
+.honor-metric__v{font-weight: 900; font-size: 18px; letter-spacing: .2px;}
+
+@media (max-width: 860px){
+  .card{grid-column: span 12}
+  .gallery{grid-template-columns: repeat(2, 1fr)}
+  .gallery img{height: 190px}
+  .honor-card{grid-column: span 12}
+}
+@media (max-width: 520px){
+  .container{padding-top: 98px}
+  .page__title{font-size: 22px}
+  .hero__title{font-size: 26px}
+  .gallery{grid-template-columns: 1fr}
+  .gallery img{height: 220px}
+}
