@@ -1,6 +1,6 @@
 - id: "featured"
   title: "精选"
-  desc: "一些我最喜欢的照片（示例数据：把 src 换成你自己的图片路径即可）"
+  desc: "一些我最喜欢的照片"
   items:
     - src: "/assets/photos/demo/01.jpg"
       thumb: "/assets/photos/demo/01.jpg"
